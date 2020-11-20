@@ -13,6 +13,7 @@
 
     <!-- Latest compiled and minified JavaScript -->
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+    <script src="<?= base_url('js/jquery-2.1.4.min.js'); ?>"></script>
   </head>
   <body>
     <nav class="navbar navbar-inverse">
@@ -29,7 +30,8 @@
         </div>
         <div class="collapse navbar-collapse" id="main_nav">
           <ul class="nav navbar-nav">
-            <li><a href='<?= anchor('index', "Accueil") ?>'>Accueil</a></li>
+          <li><?= anchor('index', "Accueil") ?></li>
+          <li><?= anchor('contact ', "Contact "); ?></li>
           </ul>
         </div>
       </div>
