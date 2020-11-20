@@ -25,11 +25,11 @@
             <span class="icon-bar"></span>
             <span class="icon-bar"></span>
           </button>
-          <a class="navbar-brand" href="/index.html">Alain DANTEN</a>
+          <a class="navbar-brand" href='<?= anchor('index', "Accueil") ?>'>Alain DANTEN</a>
         </div>
         <div class="collapse navbar-collapse" id="main_nav">
           <ul class="nav navbar-nav">
-            <li><a href="/index.html">Accueil</a></li>
+            <li><a href='<?= anchor('index', "Accueil") ?>'>Accueil</a></li>
           </ul>
         </div>
       </div>
