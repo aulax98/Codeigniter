@@ -1,19 +1,20 @@
 <div class="container">
   <div class="row">
-    <?= heading( $title); ?>
+    <?= heading($title); ?>
   </div>
   <div class="row">
     <?= form_open('contact', ['class' => 'form-horizontal']); ?>
     <div class="form-group">
       <?= form_label("Votre nom&nbsp;:", "name", ['class' => "col-md-2 control-label "]) ?>
-        <div class="col-md-10">
-      <?= form_input(['name' => "name", 'id' => "name", 'class' => 'form-control']) ?>
+      <div class="col-md-10">
+        <?= form_input(['name' => "name", 'id' => "name", 'class' => 'form-control']) ?>
       </div>
     </div>
     <div class="form-group">
       <?= form_label("Votre e-mail&nbsp;:", "email", ['class' => "col-md-2 control-label "]) ?>
-      <div class="col-md-10">
-        <?= form_input(['name' => "email", 'id' => "email", 'type' => 'email', 'class' => 'form-control']) ?>
+      <div class="col-md-10 <?= empty(form_error('email')) ? '' : 'has-error' ?>">
+        <?= form_input(['name' => "email", 'id' => "email", 'type' => 'email', 'class' => 'form-control'], set_value('email')) ?>
+        <span class="help-block"><?= form_error('email'); ?></span>
       </div>
     </div>
     <div class="form-group">
@@ -24,8 +25,9 @@
     </div>
     <div class="form-group">
       <?= form_label("Message&nbsp;:", "message", ['class' => "col-md-2 control-label "]) ?>
-      <div class="col-md-10">
+      <div class="col-md-10 <?= empty( form_error('message')) ?'':'has-error' ?>">
         <?= form_textarea(['name' => "message", 'id' => "message", 'class' => 'form-control']) ?>
+        <span class="help-block"><?= form_error('message'); ?></span>
       </div>
     </div>
     <div class="form-group">
