@@ -4,6 +4,6 @@
     <hr/>
   </div>
   <div class="row">
-    <p>Ceci est mon panneau de contrôle</p>
+    <p>Ceci est un panneau de controle.</p>
   </div>
 </div>
