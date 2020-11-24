@@ -27,7 +27,6 @@
           <span class="icon-bar"></span>
           <span class="icon-bar"></span>
         </button>
-        <a href="index.html" class="navbar-brand">Alain Danten</a>
       </div>
       <div class="collapse navbar-collapse" id="main_nav">
         <ul class="nav navbar-nav">
